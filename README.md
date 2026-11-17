@@ -10,6 +10,8 @@ O acúmulo nas bordas visíveis das janelas, o boneco e o limpa-neve vêm ativos
 
 Execute `zsh scripts/build-app.sh` e abra `dist/Neve no Mac.app`. Clique no floco da barra de menus para abrir diretamente o painel de ajustes azul-escuro/ciano. Fechar o painel mantém o efeito ativo.
 
+O pacote inclui um ícone próprio de floco de neve ciano sobre azul-marinho, nas resoluções de 16 a 1024 pixels. Para encontrá-lo pelo Spotlight com esse ícone, copie `Neve no Mac.app` para **Aplicativos** pelo Finder e abra o app uma vez. Depois pesquise **Neve no Mac**. A indexação e a atualização do cache de ícones são feitas pelo macOS e podem levar algum tempo; o projeto não apaga caches do sistema. A compilação gera o `.icns` a partir de desenho vetorial em `scripts/make-icon.swift`, sem arquivos de imagem externos, e não instala nem reinicia o app em uso.
+
 O vento tem duas opções: **De cima para baixo**, selecionada inicialmente, e **Lateral**. A queda vertical tem uma pequena variação natural sem atravessar a tela na diagonal. As preferências antigas são preservadas ao atualizar. O recurso de criar e lançar bolas de neve foi removido; a sobreposição deixa todos os cliques passar.
 
 Quantidade, velocidade, vento, profundidade, boneco e limpa-neve automático são ajustáveis. As preferências ficam no UserDefaults do app. Há uma sobreposição por monitor, atualizada quando monitores são conectados ou removidos. O efeito pausa quando a sessão ou a tela dorme e reduz os flocos no modo de pouca energia. Os atalhos Command+, e Command+Q abrem os ajustes e encerram o app quando ele está ativo.
