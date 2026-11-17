@@ -14,3 +14,9 @@ References/
 *.trace
 *.log
 __pycache__/
+windows/**/bin/
+windows/**/obj/
+windows/artifacts/
+windows/.vs/
+*.user
+*.suo

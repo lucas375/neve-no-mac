@@ -17,7 +17,7 @@ RULES = {
     "hardcoded credential": rb"(?i)(?:password|api[_-]?key|access[_-]?token|client[_-]?secret)\s*[:=]\s*[\"'][A-Za-z0-9/+_=-]{16,}[\"']",
     "local home path": rb"/(?:Users|home)/[A-Za-z0-9_.-]+/",
 }
-ALLOWED_ROOTS = {"Sources", "Tests", "scripts", "docs", ".github"}
+ALLOWED_ROOTS = {"Sources", "Tests", "scripts", "docs", ".github", "windows"}
 ALLOWED_FILES = {".gitignore", "Package.swift", "README.md", "SECURITY.md"}
 FORBIDDEN_SUFFIXES = {".jpg", ".jpeg", ".png", ".image", ".pem", ".key", ".p12", ".pfx", ".mobileprovision", ".memgraph", ".log"}
 

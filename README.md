@@ -2,6 +2,8 @@
 
 App nativo para macOS 13 ou superior, feito em Swift, AppKit e SwiftUI, sem dependências externas. Inspiração visual: Reel [@koiart_en](https://www.instagram.com/reel/DfzbIp2tbLc/).
 
+A versão Windows está em desenvolvimento separado: [instruções, requisitos e verificações em windows/README.md](windows/README.md). A interface Windows ainda precisa de validação em uma máquina Windows; o app macOS permanece independente.
+
 Flocos caem **sobre todas as páginas e janelas abertas**, inclusive em tela cheia, e desaparecem ao sair pela borda inferior. A neve, o boneco e o trator limpa-neve são uma sobreposição transparente; o wallpaper atual permanece como está. Os flocos são animados na GPU com Core Animation.
 
 O acúmulo nas bordas visíveis das janelas, o boneco e o limpa-neve vêm ativos e podem ser desligados separadamente. As pilhas têm contorno irregular e acompanham as janelas em coordenadas locais. Sacudir ou fechar uma janela solta parte da neve. O boneco e o limpa-neve são desenhos próprios feitos em código.
