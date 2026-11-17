@@ -1,0 +1,16 @@
+.build/
+.swiftpm/
+dist/
+References/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.mobileprovision
+*.memgraph
+*.trace
+*.log
+__pycache__/
