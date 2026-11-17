@@ -4,6 +4,8 @@ O aplicativo não faz requisições de rede, não envia telemetria e não usa de
 
 Preferências ficam localmente no UserDefaults. O projeto não solicita gravação de tela ou acessibilidade, não instala serviços privilegiados e não altera senha, Touch ID, FileVault ou a política de bloqueio. Os scripts de instalação atuam somente no protetor deste projeto, no diretório do usuário, e preservam uma cópia da versão anterior.
 
+A implementação experimental em `windows/` usa somente .NET/WPF/WinForms e APIs do Windows. Consulta identificadores, PID, geometria, visibilidade e ordem das janelas; não lê títulos, não captura pixels, não instala hooks de teclado e não usa rede/telemetria. As preferências ficam em `%LOCALAPPDATA%\NeveNoWindows\settings.json`, com leitura limitada a 64 KiB e valores normalizados. A sobreposição exige apenas privilégios do usuário, deixa cliques passar e é suspensa no bloqueio da sessão. Ela não altera nem desenha sobre o login seguro. A revisão macOS não valida a interface ou o consumo gráfico Windows; consulte os critérios pendentes em `windows/README.md`.
+
 Arquivos compilados, wallpapers, capturas, credenciais e relatórios brutos de memória ficam fora do Git. Antes de publicar alterações, revise os arquivos preparados e execute:
 
 ```sh
